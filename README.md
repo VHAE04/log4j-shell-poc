@@ -19,12 +19,18 @@ sudo pip install -r requirements.txt
 sudo python3 poc.py --userip localhost --webport 8000 --lport 9001
 ```
 
-open wan with ngrok 
+open wan with ngrok NAT netcat and port tcp listen redirc
 
 ```
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
 
 ngrok tcp 1389
+```
+
+use NAT port server
+
+```
+npx localtunnel --port 8080
 ```
 
 
