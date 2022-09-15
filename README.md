@@ -10,6 +10,8 @@ docker run --network host log4j-shell-poc
 use script
 
 ```
+sudo git clone https://github.com/VHAE04/log4j-shell-poc
+sudo cd log4j-shell-poc
 wget https://github.com/VHAE04/log4j-shell-poc/releases/download/file/jdk1.8.0_20.zip
 unzip jdk1.8.0_20.zip
 sudo chmod 777 -R jdk1.8.0_20
