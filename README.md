@@ -37,6 +37,8 @@ pip install -r requirements.txt
 ```
 #### Usage:
 
+- wget jdk 
+- chmod -R 777 folder jdk
 
 * Start a netcat listener to accept reverse shell connection.<br>
 ```py
