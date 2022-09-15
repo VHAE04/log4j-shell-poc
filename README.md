@@ -12,8 +12,8 @@ use script
 ```
 sudo git clone https://github.com/VHAE04/log4j-shell-poc
 cd log4j-shell-poc
-wget https://github.com/VHAE04/log4j-shell-poc/releases/download/file/jdk1.8.0_20.zip
-unzip jdk1.8.0_20.zip
+sudo wget https://github.com/VHAE04/log4j-shell-poc/releases/download/file/jdk1.8.0_20.zip
+sudo unzip jdk1.8.0_20.zip
 sudo chmod 777 -R jdk1.8.0_20
 sudo pip install -r requirements.txt
 sudo python3 poc.py --userip localhost --webport 8000 --lport 9001
