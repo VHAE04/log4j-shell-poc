@@ -33,6 +33,9 @@ use NAT port server
 npx localtunnel --port 8080
 ```
 
+DCM M PHAI NAT 3 PORT 2 PORT WEB VA NGROK O MAY NAY
+SAU KHI M NAT M CAN SUA FILE Exploit.java trong co ip va port roi may moi dung đuoc WAN DCM THG VHA NGU
+
 
 
 # log4j-shell-poc
